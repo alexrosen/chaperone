@@ -1,17 +1,25 @@
 Chaperone
 =========
-Chaperone is an Automation toolkit rooted in DevOps principals for deploying
+Chaperone is an automation toolkit rooted in DevOps principles for deploying
 and configuring a Software Defined Data Center (SDDC) based Hybrid Cloud
 Management platform. It is intended to expedite and standardize  "typical"
-deployments and configuration of VMware solutions including vSphere/vCenter,
-NSX, VIO, vRA, vRO, vROps, vRLI, vRB and others as the toolkit grows.
+deployments and configuration of VMware solutions including: 
+
+- vSphere/vCenter
+- NSX
+- VMware Integrated OpenStack
+- vRealize Automation
+- vRealize Orchestrator
+- vRealize Operations Insight
+- vRealize Log Insight
+- vRealize Business
 
 The project is a work in progress, and always will be such a facility as we
 add new functionalities and products to the Chaperone base.
 
 The toolkit consists of web based interfaces and (generally) Ansible code called
-bu the web interfaces. The plays are used to configure and deploy standard one of
-several standard platforms. There are to interfaces with which users of Chaperone
+by the web interfaces. The Ansible plays are used to configure and deploy standard one of
+several standard platforms. There are two interfaces with which users of Chaperone
 interact:
 
 - chaperone-admin-ui (e.g., 'http://chaperone-admin-ui.corp.local')
@@ -28,7 +36,7 @@ select from a list of SDDC features they would like to deploy, and basic
 ambient environment information, such as DNS servers, NTP servers, etc. Once
 entered into the various "Prepare" menu forms, clicking 'Save' saves the
 configuration as a 'codified design.' Basically, that means the information
-is saved in a YAML file as a set of parameters or, more commonly Ansible
+is saved in a YAML file as a set of parameters or, more commonly, Ansible
 variables. 
 
 Once the chaperone-admin-ui Prepare menu forms are complete and saved, the
